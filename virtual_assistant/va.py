@@ -9,3 +9,12 @@ load_dotenv()
 
 AGENT_ID = os.getenv("AGENT_ID")
 API_KEY = os.getenv("API_KEY")
+
+conversation_override = {
+  "agent": {
+    "prompt": {
+      "prompt": prompt,
+    },
+    "first_message": first_message,
+  },
+}
