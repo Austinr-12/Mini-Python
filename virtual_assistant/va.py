@@ -18,3 +18,11 @@ conversation_override = {
     "first_message": first_message,
   },
 }
+
+config = ConversationConfig(
+  conversation_config_override=conversation_override,
+  extra_body={},
+  dynamic_variables={},
+)
+
+client = ElevenLabs(api_key=API_KEY)
