@@ -26,3 +26,11 @@ config = ConversationConfig(
 )
 
 client = ElevenLabs(api_key=API_KEY)
+
+conversation = Conversation(
+  client,
+  AGENT_ID,
+  config=config,
+  requires_auth=True,
+  audio_interface=DefaultAudioInterface(),
+)
