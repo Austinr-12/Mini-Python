@@ -54,3 +54,5 @@ def print_user_transcript(transcript):
   callback_agent_response_correction=print_interrupted_response,
   callback_user_transcript=print_user_transcript,
 )
+
+conversation.start_session()
