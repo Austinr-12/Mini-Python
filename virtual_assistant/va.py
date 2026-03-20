@@ -43,3 +43,14 @@ def print_interrupted_response(original, corrected):
 
 def print_user_transcript(transcript):
   print(f"User: {transcript}")
+
+  conversation = Conversation(
+  client,
+  AGENT_ID,
+  config=config,
+  requires_auth=True,
+  audio_interface=DefaultAudioInterface(),
+  callback_agent_response=print_agent_response,
+  callback_agent_response_correction=print_interrupted_response,
+  callback_user_transcript=print_user_transcript,
+)
