@@ -5,3 +5,5 @@ import java.util.Scanner;
 public String encrypt(String text, int shift) {
     
 }
+
+StringBuilder result = new StringBuilder();
