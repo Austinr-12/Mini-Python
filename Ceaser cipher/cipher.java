@@ -7,7 +7,10 @@ public String encrypt(String text, int shift) {
 
     // for-each loop
     for (char character : text.toCharArray()) {
-        // do something with character
+        if (Character.isLetter(character)) {
+        // char base = Character.isLowerCase(character) ? 'a' : 'A';
+        }
+
     }
 
 }
