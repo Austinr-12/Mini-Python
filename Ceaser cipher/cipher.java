@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+public static void main(String[] args) {
+    
+}
 
 // method that will do the encrypting
 public static String encrypt(String text, int shift) {
