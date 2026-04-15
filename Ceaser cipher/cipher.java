@@ -6,7 +6,11 @@ public static void main(String[] args) {
     System.outprint("Enter text to encrypt: ");
     String inputText = scanner.nextLine();
 
-    
+    System.out.print("Enter shift key (0-25): ");
+    int shiftKey = scanner.nextInt();
+
+    String encrypted = encrypt(inputText, shiftKey);
+    System.out.println("Encrypted text: " + encrypted);
 }
 
 // method that will do the encrypting
