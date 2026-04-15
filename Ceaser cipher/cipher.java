@@ -3,7 +3,7 @@ import java.util.Scanner;
 public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    System.outprint("Enter text to encrypt: ");
+    System.out.print("Enter text to encrypt: ");
     String inputText = scanner.nextLine();
 
     System.out.print("Enter shift key (0-25): ");
